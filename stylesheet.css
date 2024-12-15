@@ -227,6 +227,22 @@ a:hover {
     text-align: center; /* Zentriere den Text */
     padding: 10px; /* Zusätzlicher Abstand für bessere Lesbarkeit */
   }
+  .ak-box {
+    display: flex;
+    justify-content: center; /* Zentriert den Inhalt horizontal in der Box */
+    align-items: center; /* Zentriert den Inhalt vertikal in der Box */
+    flex-direction: row; /* Stellt sicher, dass die Icons und Text nebeneinander sind */
+    background-color: #c2c2c2;
+    color: #050505;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 5px 0;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 350px; /* Feste Breite der Boxen */
+    height: 200px; /* Feste Höhe der Boxen */
+    box-sizing: border-box;
+  }
   .ak-box img {
     width: auto;
     height: 75%;
@@ -234,11 +250,5 @@ a:hover {
     margin-right: 10px;
     border-radius: 15px;
   }
-  .ak-box span {
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  .ak-box p {
-    font-size: 0.8rem;
-  }
+  
 }
