@@ -1,175 +1,230 @@
 /* Allgemeine Einstellungen 
 Basiert auf Falkenmarlins stylesheet(https://falkenmarlin.github.io/stylesheet.css) vom 15.12.2024
 */
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 body {
-    height: 100%;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #050505;
-    color: #c2c2c2;
-    overflow-y: auto; /* Ermöglicht Scrollen */
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #050505;
+  color: #c2c2c2;
+  overflow-y: auto; /* Ermöglicht Scrollen */
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    text-align: center;
-    padding: 20px;
-    background-color: #c2c2c2;
-    color: #050505;
-    height: auto; /* Keine fixe Höhe */
-    margin-bottom: 20px; /* Abstand zu nachfolgenden Elementen */
+  text-align: center;
+  padding: 20px;
+  background-color: #c2c2c2;
+  color: #050505;
+  height: auto; /* Keine fixe Höhe */
+  margin-bottom: 20px; /* Abstand zu nachfolgenden Elementen */
 }
 
 header img {
-    border-radius: 50%;
-    margin-top: 10px;
+  border-radius: 50%;
+  margin-top: 10px;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: #050505;
-    padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #050505;
+  padding: 10px 0;
 }
 
 nav a {
-    text-decoration: none;
-    color: #c2c2c2;
-    margin: 0 15px;
-    font-weight: bold;
+  text-decoration: none;
+  color: #c2c2c2;
+  margin: 0 15px;
+  font-weight: bold;
 }
 
 nav a:hover {
-    color: #db6767;
-    text-decoration: underline;
+  color: #db6767;
+  text-decoration: underline;
 }
 
 main {
-    padding: 20px;
-    max-width: 1500px; /* Verwende max-width für bessere Skalierbarkeit */
-    margin: 0 auto; /* Zentriert das Element horizontal */
-    flex: 1;
-    display: flex; /* Aktiviert Flexbox */
-    flex-direction: column; /* Optional, falls die Inhalte vertikal angeordnet werden sollen */
-    align-items: center; /* Zentriert Inhalte horizontal innerhalb des Flex-Containers */
+  padding: 20px;
+  max-width: 1500px; /* Verwende max-width für bessere Skalierbarkeit */
+  margin: 0 auto; /* Zentriert das Element horizontal */
+  flex: 1;
+  display: flex; /* Aktiviert Flexbox */
+  flex-direction: column; /* Optional, falls die Inhalte vertikal angeordnet werden sollen */
+  align-items: center; /* Zentriert Inhalte horizontal innerhalb des Flex-Containers */
 }
 
 section {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 section h2 {
-    color: #c2c2c2;
-    border-bottom: 2px solid #db6767;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+  color: #c2c2c2;
+  border-bottom: 2px solid #db6767;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 section h2.centered {
-    text-align: center;
+  text-align: center;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #c2c2c2;
-    color: #050505;
+  text-align: center;
+  padding: 10px;
+  background-color: #c2c2c2;
+  color: #050505;
 }
 
 a {
-    color: #db6767;
+  color: #db6767;
 }
 
 a.linkNoUl {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a.highlight {
-    color: #db6767; /* Bleibt in der Standardfarbe */
-    text-decoration: none; /* Entfernt die Unterstreichung */
-    pointer-events: none; /* Deaktiviert Hover-Effekte und Klicks */
+  color: #db6767; /* Bleibt in der Standardfarbe */
+  text-decoration: none; /* Entfernt die Unterstreichung */
+  pointer-events: none; /* Deaktiviert Hover-Effekte und Klicks */
 }
 
 a:hover {
-    color: #c2c2c2;
+  color: #c2c2c2;
 }
 
 /*Container, der die VB enthält*/
 .link-box-container {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: center; /* Horizontal zentrieren */
-    align-items: center; /*vertikal center*/
-    flex-direction: column; /* Elemente untereinander anordnen */
-    margin-top: 20px; /* Abstand unterhalb des Headers */
-    padding-top: 20px; /* Zusätzlicher Puffer */
-    height: auto; /* Keine feste Höhe */
+  display: flex; /* Flexbox aktivieren */
+  justify-content: center; /* Horizontal zentrieren */
+  align-items: center; /*vertikal center*/
+  flex-direction: column; /* Elemente untereinander anordnen */
+  margin-top: 20px; /* Abstand unterhalb des Headers */
+  padding-top: 20px; /* Zusätzlicher Puffer */
+  height: auto; /* Keine feste Höhe */
 }
 
 /* Verlinkungs Boxen */
 .link-box {
-    display: flex;
-    justify-content: center;  /* Zentriert den Inhalt horizontal in der Box */
-    align-items: center;      /* Zentriert den Inhalt vertikal in der Box */
-    flex-direction: row;      /* Stellt sicher, dass die Icons und Text nebeneinander sind */
-    background-color: #c2c2c2;
-    color: #050505;
-    padding: 10px 15px;
-    border-radius: 15px;
-    margin: 10px 0;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    width: 250px;             /* Feste Breite der Boxen */
-    height: 60px;             /* Feste Höhe der Boxen */
-    box-sizing: border-box;
+  display: flex;
+  justify-content: center; /* Zentriert den Inhalt horizontal in der Box */
+  align-items: center; /* Zentriert den Inhalt vertikal in der Box */
+  flex-direction: row; /* Stellt sicher, dass die Icons und Text nebeneinander sind */
+  background-color: #c2c2c2;
+  color: #050505;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin: 10px 0;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 250px; /* Feste Breite der Boxen */
+  height: 60px; /* Feste Höhe der Boxen */
+  box-sizing: border-box;
 }
 
-
 .link-box:hover {
-    background-color: #db6767;
-    color: #050505;
-    transform: translateY(-5px);
+  background-color: #db6767;
+  color: #050505;
+  transform: translateY(-5px);
 }
 
 .link-box img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
 }
 
 .link-box span {
-    font-size: 1rem;
-    font-weight: bold;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Aktuelles Boxen */
+/*Container, der die VB enthält*/
+.ak-box-container {
+  display: flex; /* Flexbox aktivieren */
+  justify-content: center; /* Horizontal zentrieren */
+  align-items: center; /*vertikal center*/
+  flex-wrap: wrap;
+  margin-top: 20px; /* Abstand unterhalb des Headers */
+  padding-top: 20px; /* Zusätzlicher Puffer */
+  width: auto;
+  height: auto; /* Keine feste Höhe */
+  gap: 25px;
+}
+
+/* Verlinkungs Boxen */
+.ak-box {
+  display: flex;
+  justify-content: center; /* Zentriert den Inhalt horizontal in der Box */
+  align-items: center; /* Zentriert den Inhalt vertikal in der Box */
+  flex-direction: row; /* Stellt sicher, dass die Icons und Text nebeneinander sind */
+  background-color: #c2c2c2;
+  color: #050505;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin: 10px 0;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 400px; /* Feste Breite der Boxen */
+  height: 250px; /* Feste Höhe der Boxen */
+  box-sizing: border-box;
+}
+
+.ak-box:hover {
+  background-color: #db6767;
+  color: #050505;
+  transform: translateY(-5px);
+}
+
+.ak-box img {
+  width: auto;
+  height: 100%;
+  object-fit: contain; /* Behält das Seitenverhältnis bei */
+  margin-right: 10px;
+  border-radius: 15px;
+}
+
+.ak-box span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.ak-box p {
+  font-size: 1rem;
 }
 
 .img404 {
-    width: 300px;
-    height: 300px;
-    margin-right: 10px;
-    border-radius: 15%;
+  width: 300px;
+  height: 300px;
+  margin-right: 10px;
+  border-radius: 15%;
 }
 
 .highlight {
-    color: #db6767;
+  color: #db6767;
 }
 
 .inline {
-    display: inline;
+  display: inline;
 }
 
 /* Responsive Anpassungen für kleine Displays */
 @media (max-width: 768px) {
-    .link-box-container h2 {
-        font-size: 1.2rem; /* Verkleinere die Schriftgröße */
-        text-align: center; /* Zentriere den Text */
-        padding: 10px; /* Zusätzlicher Abstand für bessere Lesbarkeit */
-    }
+  .link-box-container h2 {
+    font-size: 1.2rem; /* Verkleinere die Schriftgröße */
+    text-align: center; /* Zentriere den Text */
+    padding: 10px; /* Zusätzlicher Abstand für bessere Lesbarkeit */
+  }
 }
