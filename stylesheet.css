@@ -227,4 +227,11 @@ a:hover {
     text-align: center; /* Zentriere den Text */
     padding: 10px; /* Zusätzlicher Abstand für bessere Lesbarkeit */
   }
+  .ak-box img {
+    width: auto;
+    height: 75%;
+    object-fit: contain; /* Behält das Seitenverhältnis bei */
+    margin-right: 10px;
+    border-radius: 15px;
+  }
 }
