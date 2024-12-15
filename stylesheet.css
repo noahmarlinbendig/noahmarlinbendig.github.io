@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #050505;
-    color: #c5cab1;
+    color: #c2c2c2;
     overflow-y: auto; /* Ermöglicht Scrollen */
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #c5cab1;
+    background-color: #c2c2c2;
     color: #050505;
     height: auto; /* Keine fixe Höhe */
     margin-bottom: 20px; /* Abstand zu nachfolgenden Elementen */
@@ -42,7 +42,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #c5cab1;
+    color: #c2c2c2;
     margin: 0 15px;
     font-weight: bold;
 }
@@ -67,7 +67,7 @@ section {
 }
 
 section h2 {
-    color: #c5cab1;
+    color: #c2c2c2;
     border-bottom: 2px solid #db6767;
     padding-bottom: 5px;
     margin-bottom: 15px;
@@ -80,7 +80,7 @@ section h2.centered {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #c5cab1;
+    background-color: #c2c2c2;
     color: #050505;
 }
 
@@ -99,7 +99,7 @@ a.highlight {
 }
 
 a:hover {
-    color: #c5cab1;
+    color: #c2c2c2;
 }
 
 /*Container, der die VB enthält*/
@@ -119,7 +119,7 @@ a:hover {
     justify-content: center;  /* Zentriert den Inhalt horizontal in der Box */
     align-items: center;      /* Zentriert den Inhalt vertikal in der Box */
     flex-direction: row;      /* Stellt sicher, dass die Icons und Text nebeneinander sind */
-    background-color: #c5cab1;
+    background-color: #c2c2c2;
     color: #050505;
     padding: 10px 15px;
     border-radius: 15px;
