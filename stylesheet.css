@@ -234,4 +234,11 @@ a:hover {
     margin-right: 10px;
     border-radius: 15px;
   }
+  .ak-box span {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .ak-box p {
+    font-size: 0.8rem;
+  }
 }
