@@ -244,8 +244,8 @@ a:hover {
     box-sizing: border-box;
   }
   .ak-box img {
-    width: 75%;
-    height: auto;
+    width: auto;
+    height: 75px;
     object-fit: contain; /* Behält das Seitenverhältnis bei */
     margin-right: 10px;
     border-radius: 15px;
