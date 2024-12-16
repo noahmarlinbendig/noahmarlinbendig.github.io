@@ -78,10 +78,6 @@ section h2.centered {
   text-align: center;
 }
 
-section span.strike-line {
-  text-decoration: line-through;
-}
-
 footer {
   text-align: center;
   padding: 10px;
@@ -152,6 +148,12 @@ a:hover {
 .link-box span {
   font-size: 1rem;
   font-weight: bold;
+}
+
+.link-box span.strike {
+    text-decoration: line-through;
+    text-decoration-thickness: 0.25rem;
+    color: #db6767;
 }
 
 /* Aktuelles Boxen */
