@@ -78,6 +78,10 @@ section h2.centered {
   text-align: center;
 }
 
+section span.strike {
+  text-decoration: line-through;
+}
+
 footer {
   text-align: center;
   padding: 10px;
