@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Aktuelles von Noah</title>
+    <id>https://noahmarlinbendig.github.io</id>
+    <link rel="self" href="https://noahmarlinbendig.github.io/feed"/>
+    <content>Test</content>
+
+</feed>
