@@ -1,6 +1,13 @@
 /* Allgemeine Einstellungen 
 Basiert auf Falkenmarlins stylesheet(https://falkenmarlin.github.io/stylesheet.css) vom 15.12.2024
 */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 html,
 body {
   height: 100%;
@@ -10,7 +17,7 @@ body {
 }
 body {
   height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #050505;
@@ -25,8 +32,8 @@ header {
   padding: 20px;
   background-color: #c2c2c2;
   color: #050505;
-  height: auto; /* Keine fixe Höhe */
-  margin-bottom: 20px; /* Abstand zu nachfolgenden Elementen */
+  height: auto;
+  margin-bottom: 20px;
 }
 
 header img {
@@ -55,12 +62,12 @@ nav a:hover {
 
 main {
   padding: 20px;
-  max-width: 1500px; /* Verwende max-width für bessere Skalierbarkeit */
-  margin: 0 auto; /* Zentriert das Element horizontal */
+  max-width: 1500px;
+  margin: 0 auto;
   flex: 1;
-  display: flex; /* Aktiviert Flexbox */
-  flex-direction: column; /* Optional, falls die Inhalte vertikal angeordnet werden sollen */
-  align-items: center; /* Zentriert Inhalte horizontal innerhalb des Flex-Containers */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 section {
@@ -94,9 +101,9 @@ a.linkNoUl {
 }
 
 a.highlight {
-  color: #db6767; /* Bleibt in der Standardfarbe */
-  text-decoration: none; /* Entfernt die Unterstreichung */
-  pointer-events: none; /* Deaktiviert Hover-Effekte und Klicks */
+  color: #db6767;
+  text-decoration: none;
+  pointer-events: none;
 }
 
 a:hover {
@@ -105,21 +112,21 @@ a:hover {
 
 /*Container, der die VB enthält*/
 .link-box-container {
-  display: flex; /* Flexbox aktivieren */
-  justify-content: center; /* Horizontal zentrieren */
-  align-items: center; /*vertikal center*/
-  flex-direction: column; /* Elemente untereinander anordnen */
-  margin-top: 20px; /* Abstand unterhalb des Headers */
-  padding-top: 20px; /* Zusätzlicher Puffer */
-  height: auto; /* Keine feste Höhe */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-top: 20px;
+  height: auto;
 }
 
 /* Verlinkungs Boxen */
 .link-box {
   display: flex;
-  justify-content: center; /* Zentriert den Inhalt horizontal in der Box */
-  align-items: center; /* Zentriert den Inhalt vertikal in der Box */
-  flex-direction: row; /* Stellt sicher, dass die Icons und Text nebeneinander sind */
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   background-color: #c2c2c2;
   color: #050505;
   padding: 10px 15px;
@@ -127,8 +134,8 @@ a:hover {
   margin: 10px 0;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  width: 250px; /* Feste Breite der Boxen */
-  height: 60px; /* Feste Höhe der Boxen */
+  width: 250px;
+  height: 60px;
   box-sizing: border-box;
 }
 
@@ -151,31 +158,31 @@ a:hover {
 }
 
 .link-box span.strike {
-    text-decoration: line-through;
-    text-decoration-thickness: 0.25rem;
-    color: #db6767;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.25rem;
+  color: #db6767;
 }
 
 /* Aktuelles Boxen */
 /*Container, der die VB enthält*/
 .ak-box-container {
-  display: flex; /* Flexbox aktivieren */
-  justify-content: center; /* Horizontal zentrieren */
-  align-items: center; /*vertikal center*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  margin-top: 20px; /* Abstand unterhalb des Headers */
-  padding-top: 20px; /* Zusätzlicher Puffer */
+  margin-top: 20px;
+  padding-top: 20px;
   width: auto;
-  height: auto; /* Keine feste Höhe */
+  height: auto;
   gap: 25px;
 }
 
 /* Verlinkungs Boxen */
 .ak-box {
   display: flex;
-  justify-content: center; /* Zentriert den Inhalt horizontal in der Box */
-  align-items: center; /* Zentriert den Inhalt vertikal in der Box */
-  flex-direction: row; /* Stellt sicher, dass die Icons und Text nebeneinander sind */
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   background-color: #c2c2c2;
   color: #050505;
   padding: 10px 15px;
@@ -183,10 +190,12 @@ a:hover {
   margin: 10px 0;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  width: 400px; /* Feste Breite der Boxen */
-  height: 250px; /* Feste Höhe der Boxen */
+  flex: 0 0 400px;
+  width: 400px;
+  height: 250px;
   box-sizing: border-box;
 }
+
 
 .ak-box:hover {
   background-color: #db6767;
@@ -196,8 +205,8 @@ a:hover {
 
 .ak-box img {
   width: auto;
-  height: 100%;
-  object-fit: contain; /* Behält das Seitenverhältnis bei */
+  height: 75%;
+  object-fit: contain;
   margin-right: 10px;
   border-radius: 15px;
 }
@@ -229,30 +238,32 @@ a:hover {
 /* Responsive Anpassungen für kleine Displays */
 @media (max-width: 768px) {
   .link-box-container h2 {
-    font-size: 1.2rem; /* Verkleinere die Schriftgröße */
-    text-align: center; /* Zentriere den Text */
-    padding: 10px; /* Zusätzlicher Abstand für bessere Lesbarkeit */
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
   }
   .ak-box {
     display: flex;
-    justify-content: center; /* Zentriert den Inhalt horizontal in der Box */
-    align-items: center; /* Zentriert den Inhalt vertikal in der Box */
-    flex-direction: row; /* Stellt sicher, dass die Icons und Text nebeneinander sind */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     background-color: #c2c2c2;
     color: #050505;
     padding: 10px 15px;
     border-radius: 15px;
-    margin: 5px 0;
+    margin: 10px 0;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    width: 350px; /* Feste Breite der Boxen */
-    height: 200px; /* Feste Höhe der Boxen */
+    flex: 0 0 350px;
+    width: 350px;
+    height: 250px;
     box-sizing: border-box;
   }
+  
   .ak-box img {
     width: auto;
     height: 75px;
-    object-fit: contain; /* Behält das Seitenverhältnis bei */
+    object-fit: contain;
     margin-right: 10px;
     border-radius: 15px;
   }
