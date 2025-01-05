@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fehler 404 - Die gewünschte Seite wurde nicht gefunden. Besuchen Sie unsere Startseite.">
     <title>Error - 404</title>
-    <link rel="icon" href="/nmb.jpg" type="image/jpg">
-    <link rel="stylesheet" href="/stylesheet.css">
-</head>
-<body>
-    <main  class="link-box-container">
-        <img src="/404.jpg" alt="-404-" class="img404">
-        <h2>Seite nicht gefunden! <a href="/" class="linkNoUl">zurück zur Homepage</a></h2>
+    <link rel="icon" href="/nmb.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+  </head>
+  <body>
+    <main class="link-box-container">
+      <img src="/404.jpg" alt="-404-" class="img404" />
+      <h2>Seite nicht gefunden!</h2>
+      <p>
+        Die Seite, die Sie suchen, existiert nicht oder wurde verschoben.
+        Überprüfen Sie die URL oder gehen Sie zurück zur
+        <a href="/" class="linkNoUl" role="Link">Startseite</a>.
+      </p>
     </main>
     <footer>
-        <p>&copy; 2024 Noah Marlin Bendig. Alle Rechte vorbehalten.</p>
-    </footer>    
-</body>
+      <p>
+        &copy; 2024 - <span id="year"></span> Noah Marlin Bendig. Alle Rechte
+        vorbehalten.
+      </p>
+    </footer>
+  </body>
+</html>
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>

@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Links zu den social media Profilen von Noah Marlin Bendig." />
     <title>NMB - Links</title>
-    <link rel="icon" href="/nmb.jpg" type="image/jpg" />
-    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="icon" href="nmb.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="stylesheet.css" />
   </head>
   <body>
     <header>
@@ -14,33 +15,40 @@
     </header>
     <main class="link-box-container">
       <a href="https://matrix.to/#/@noahbendig:nope.chat" class="link-box">
-        <img src="https://matrix.org/assets/favicon.ico" alt="Icon" />
+        <img src="https://matrix.org/assets/favicon.ico" alt="Matrix icon" />
         <span>Matrix</span>
       </a>
       <a href="https://github.com/noahmarlinbendig" class="link-box">
-        <img src="https://github.com/fluidicon.png" alt="Icon" />
+        <img src="https://github.com/fluidicon.png" alt="Github icon" />
         <span>Github</span>
       </a>
       <a href="https://discord.com/users/1074506060662059009" class="link-box">
         <img
-        src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/62fddf0fde45a8baedcc7ee5_847541504914fd33810e70a0ea73177e%20(2)-1.png"
-        " alt="Icon">
+          src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/62fddf0fde45a8baedcc7ee5_847541504914fd33810e70a0ea73177e%20(2)-1.png"
+          alt="Discord icon"
+        />
         <span>Discord</span>
       </a>
       <a href="https://www.instagram.com/noahmarlinbendig/" class="link-box">
         <img
           src="https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico"
-          alt="Icon"
+          alt="instagram icon"
         />
         <span>Instagram</span>
       </a>
       <a href="/" class="link-box">
-        <img src="nmb.jpg" alt="Icon" />
+        <img src="nmb.jpg" alt="NMB icon" />
         <span>Noah Marlin Bendig</span>
       </a>
     </main>
     <footer>
-      <p>&copy; 2024 Noah Marlin Bendig. Alle Rechte vorbehalten.</p>
+      <p>
+        &copy; 2024 - <span id="year"></span> Noah Marlin Bendig. Alle Rechte
+        vorbehalten.
+      </p>
     </footer>
   </body>
 </html>
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
