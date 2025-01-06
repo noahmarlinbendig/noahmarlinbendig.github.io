@@ -797,3 +797,11 @@ hr {
     margin-top: 90px !important; }
   .game-message .lower {
     margin-top: 30px !important; } }
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #c2c2c2;
+  color: #050505;
+}
