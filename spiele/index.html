@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Spiele von Noah Bendig entwickelt/modifiziert">
+    <title></title>
+    <link rel="icon" href="../nmb.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="../stylesheet.css" />
+  </head>
+  <body>
+    <header>
+        <h2 class="centered">Spiele</h2>
+        <img src="../assets/controller.png" width="5%" height="auto">
+        <p>Spiele, die direkt im Browser gespielt werden können. Entweder von mir entwickelt oder modifiziert.</p>
+    </header>
+    <main>
+        <div class="ak-box-container">
+            <a
+            href="2048/"
+            class="ak-box"
+          >
+            <img
+              src="2048/meta/apple-touch-icon.png"
+              alt="2048"
+            />
+            <div>
+              <span>2048</span>
+              <p>
+                Verbinde die Zahlen und erhalte <strong>2048!</strong>
+              </p>
+            </div>
+          </a>
+        </div>
+    </main>
+    <footer>
+      <p>
+        &copy; 2024 - <span id="year"></span> Noah Marlin Bendig. Alle Rechte
+        vorbehalten.
+      </p>
+    </footer>
+  </body>
+</html>
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
