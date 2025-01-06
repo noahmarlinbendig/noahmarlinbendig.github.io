@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>2048</title>
+
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="meta/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="./meta/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-startup-image"
+      href="./meta/apple-touch-startup-image-640x1096.png"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+    />
+    <!-- iPhone 5+ -->
+    <link
+      rel="apple-touch-startup-image"
+      href="meta/apple-touch-startup-image-640x920.png"
+      media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"
+    />
+    <!-- iPhone, retina -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta
+      name="viewport"
+      content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1 class="title">Dev</h1>
+        <div class="scores-container">
+          <div class="score-container">
+            42
+            <div class="score-addition">+42</div>
+          </div>
+          <div class="best-container">42</div>
+        </div>
+      </div>
+
+      <div class="above-game">
+        <p class="game-intro">
+          Debug Menü für Farbanpassung<br />
+          und andere Tests.
+        </p>
+        <a class="restart-button">New Game</a>
+      </div>
+
+      <div class="game-container">
+        <div class="game-message">
+          <p></p>
+          <div class="lower">
+            <a class="keep-playing-button">Keep going</a>
+            <a class="retry-button">Try again</a>
+          </div>
+        </div>
+
+        <div class="grid-container">
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+        </div>
+
+        <div class="tile-container">
+          <div class="tile tile-2 tile-position-1-1 tile-new">
+            <div class="tile-inner">2</div>
+          </div>
+          <div class="tile tile-4 tile-position-1-2 tile-new">
+            <div class="tile-inner">4</div>
+          </div>
+          <div class="tile tile-8 tile-position-1-3 tile-new">
+            <div class="tile-inner">8</div>
+          </div>
+          <div class="tile tile-16 tile-position-1-4 tile-new">
+            <div class="tile-inner">16</div>
+          </div>
+          <div class="tile tile-32 tile-position-2-1 tile-new">
+            <div class="tile-inner">32</div>
+          </div>
+          <div class="tile tile-64 tile-position-2-2 tile-new">
+            <div class="tile-inner">64</div>
+          </div>
+          <div class="tile tile-128 tile-position-2-3 tile-new">
+            <div class="tile-inner">128</div>
+          </div>
+          <div class="tile tile-256 tile-position-2-4 tile-new">
+            <div class="tile-inner">256</div>
+          </div>
+          <div class="tile tile-512 tile-position-3-1 tile-new">
+            <div class="tile-inner">512</div>
+          </div>
+          <div class="tile tile-1024 tile-position-3-2 tile-new">
+            <div class="tile-inner">1024</div>
+          </div>
+          <div class="tile tile-2048 tile-position-3-3 tile-new">
+            <div class="tile-inner">2048</div>
+          </div>
+          <div class="tile tile-this tile-position-3-4 tile-new">
+            <div class="tile-inner">this</div>
+          </div>
+          <div class="tile tile-is tile-position-4-1 tile-new">
+            <div class="tile-inner">is</div>
+          </div>
+          <div class="tile tile-a tile-position-4-2 tile-new">
+            <div class="tile-inner">a</div>
+          </div>
+          <div class="tile tile-test tile-position-4-3 tile-new">
+            <div class="tile-inner">test</div>
+          </div>
+          <div class="tile tile-mask tile-position-4-4 tile-new">
+            <div class="tile-inner">mask</div>
+          </div>
+        </div>
+      </div>
+
+      <p class="game-explanation">
+        <strong class="important">Wie man spielt:</strong> Nutze deine
+        <strong>Pfeiltasten</strong>, um die Steine zu bewegen. Wenn sich zwei
+        Steine mit der gleichen Nummer berühren,
+        <strong>verschmelzen sie zu einem!</strong>
+      </p>
+      <hr />
+      <p>
+        <strong class="important">Hinweis:</strong> Diese Seite ist
+        <strong style="color: #db6767">nicht</strong> die offizielle Version von
+        2048. Die offizielle Versionen ist:
+        <a href="https://play2048.co">play2048.co</a>
+      </p>
+      <hr />
+      <p>
+        Erstellt von
+        <a href="http://gabrielecirulli.com" target="_blank"
+          >Gabriele Cirulli.</a
+        >
+        Modifiziert von <a href="../../">Noah Bendig</a> basierend auf
+        <a href="https://github.com/gabrielecirulli/2048"
+          >github.com/gabrielecirulli/2048</a
+        >.
+      </p>
+    </div>
+
+    <script src="js/bind_polyfill.js"></script>
+    <script src="js/classlist_polyfill.js"></script>
+    <script src="js/animframe_polyfill.js"></script>
+    <script src="js/keyboard_input_manager.js"></script>
+    <script src="js/html_actuator.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/tile.js"></script>
+    <script src="js/local_storage_manager.js"></script>
+    <script>
+      localStorage.setItem("gameState", "Debug Menü für Farbanpassung und andere Tests. Eignet sich auch gut um andere zu verwundern.");
+    </script>
+    <script src="js/game_manager.js"></script>
+    <script src="js/application.js"></script>
+  </body>
+</html>
