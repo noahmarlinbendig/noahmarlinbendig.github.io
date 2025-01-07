@@ -278,3 +278,21 @@ a:hover {
     border-radius: 15px;
   }
 }
+
+.noscript-warning {
+  background-color: #ffcc00; /* Gelbe Warnfarbe */
+  color: #000; /* Schwarzer Text */
+  text-align: center;
+  padding: 15px;
+  border: 2px solid #e6b800;
+  font-size: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.noscript-warning p {
+  margin: 0;
+}
