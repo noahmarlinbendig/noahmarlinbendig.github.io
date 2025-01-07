@@ -1,5 +1,8 @@
 # noahmarlinbendig.github.io
-
+### ToDo
+- 2048 nav Leiste styling anpassen
+- about-me schreiben
+- 
 ---
 
 ### Copypaste Vorlage
