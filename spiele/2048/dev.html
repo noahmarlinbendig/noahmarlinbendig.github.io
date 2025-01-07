@@ -5,7 +5,7 @@
     <title>2048</title>
 
     <link href="style/main.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="meta/apple-touch-icon.png" />
+    <link rel="icon" href="meta/apple-touch-icon.png" />
     <link rel="apple-touch-icon" href="./meta/apple-touch-icon.png" />
     <link
       rel="apple-touch-startup-image"
@@ -30,7 +30,7 @@
     />
   </head>
   <body>
-    <div class="container">
+    <main class="container">
       <div class="heading">
         <h1 class="title">Dev</h1>
         <div class="scores-container">
@@ -162,7 +162,17 @@
           >github.com/gabrielecirulli/2048</a
         >.
       </p>
-    </div>
+    </main>
+    <footer>
+      <p>
+        &copy; 2024 - <span id="year"></span> Noah Marlin Bendig. Alle Rechte
+        vorbehalten.
+      </p>
+    </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
 
     <script src="js/bind_polyfill.js"></script>
     <script src="js/classlist_polyfill.js"></script>

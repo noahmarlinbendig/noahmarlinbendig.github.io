@@ -29,9 +29,9 @@
         vorbehalten.
       </p>
     </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
   </body>
 </html>
-<script>
-  document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
 ```
