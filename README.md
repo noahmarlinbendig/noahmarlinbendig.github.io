@@ -32,6 +32,7 @@
     <script>
       document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
+    <script src"js/nav.js"></script>
   </body>
 </html>
 ```

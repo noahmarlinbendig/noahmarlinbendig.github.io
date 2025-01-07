@@ -7,16 +7,14 @@
     <title>Noah Marlin Bendig</title>
     <link rel="icon" href="nmb.jpg" type="image/jpg" />
     <link rel="stylesheet" href="stylesheet.css" />
+    <script src="js/nav.js" defer></script>
   </head>
   <body>
     <header>
       <h2 class="centered">Noah Marlin Bendig</h2>
       <img src="nmb.jpg" alt="noahmarlinbendig-logo" width="100" height="100" />
     </header>
-    <nav>
-      <a href="links">Links</a>
-      <a href="spiele/">Spiele</a>
-    </nav>
+    <div id="nav-placeholder"></div>
     <main>
       <section id="aktuelles">
         <h2 class="centered">Aktuelles</h2>
@@ -48,7 +46,7 @@
             class="ak-box"
             target="_blank"
           >
-            <img src="nmb.jpg" alt="noahmarlinbendig-logo"/>
+            <img src="nmb.jpg" alt="noahmarlinbendig-logo" />
             <div>
               <span>Website</span>
               <p>
@@ -63,7 +61,8 @@
       <section id="about-me">
         <h2 class="centered">Über mich</h2>
         <p>
-          Hi! Hier kommt noch Text hin, wenn ich den irgendwann mal noch schreibe. 😜
+          Hi! Hier kommt noch Text hin, wenn ich den irgendwann mal noch
+          schreibe. 😜
         </p>
       </section>
     </main>
@@ -73,8 +72,8 @@
         vorbehalten.
       </p>
     </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
   </body>
 </html>
-<script>
-  document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>

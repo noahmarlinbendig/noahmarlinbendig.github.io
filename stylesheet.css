@@ -48,6 +48,16 @@ nav {
   padding: 10px 0;
 }
 
+nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #050505;
+  z-index: 1000; /* Über allen anderen Elementen */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 nav a {
   text-decoration: none;
   color: #c2c2c2;
