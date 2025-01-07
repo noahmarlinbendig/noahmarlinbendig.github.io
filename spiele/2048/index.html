@@ -15,9 +15,23 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <script src="/js/nav.js"></script>
 </head>
 <body>
   <main class="container">
+    <nav id="nav-placeholder"></nav>
+    <noscript>
+      <div class="noscript-warning">
+        <p>
+          Diese Website erfordert JavaScript, um vollständig zu funktionieren.
+          Bitte aktiviere JavaScript in deinem Browser.
+        </p>
+      </div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/links">Links</a>
+      </nav>
+    </noscript>
     <div class="heading">
       <h1 class="title">2048</h1>
       <div class="scores-container">
