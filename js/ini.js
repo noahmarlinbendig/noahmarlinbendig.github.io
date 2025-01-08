@@ -3,7 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector("header");
   const nav = document.querySelector("nav");
 
-  const headerHeight = header.offsetHeight;
+  if(!header == null){
+    const headerHeight = header.offsetHeight;
+  } else{
+    const headerHeight = 0;
+  }
 
   window.addEventListener("scroll", () => {
     if (window.scrollY >= headerHeight) {
