@@ -22,7 +22,7 @@ body {
   padding: 0;
   background-color: #050505;
   color: #c2c2c2;
-  overflow-y: auto; /* Ermöglicht Scrollen */
+  overflow-y: auto; /* ErmÃ¶glicht Scrollen */
   display: flex;
   flex-direction: column;
 }
@@ -54,7 +54,7 @@ nav.fixed {
   left: 0;
   width: 100%;
   background-color: #050505;
-  z-index: 1000; /* Über allen anderen Elementen */
+  z-index: 1000; /* Ãber allen anderen Elementen */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -120,7 +120,7 @@ a:hover {
   color: #c2c2c2;
 }
 
-/*Container, der die VB enthält*/
+/*Container, der die VB enthÃ¤lt*/
 .link-box-container {
   display: flex;
   justify-content: center;
@@ -174,7 +174,7 @@ a:hover {
 }
 
 /* Aktuelles Boxen */
-/*Container, der die VB enthält*/
+/*Container, der die VB enthÃ¤lt*/
 .ak-box-container {
   display: flex;
   justify-content: center;
@@ -245,7 +245,7 @@ a:hover {
   display: inline;
 }
 
-/* Responsive Anpassungen für kleine Displays */
+/* Responsive Anpassungen fÃ¼r kleine Displays */
 @media (max-width: 768px) {
   .link-box-container h2 {
     font-size: 1.2rem;

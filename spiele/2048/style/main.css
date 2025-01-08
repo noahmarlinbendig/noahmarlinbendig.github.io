@@ -31,7 +31,7 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: normal;
 }
 
 
@@ -45,7 +45,7 @@ h1.title {
   font-weight: bold;
   margin: 0;
   display: block;
-  float: left; }
+  float: left !important;}
 
 @-webkit-keyframes move-up {
   0% {
