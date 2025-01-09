@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const placeholder = document.getElementById("nav-placeholder");
   const yearElement = document.getElementById("year");
 
-  let headerHeight = 20;
+  let headerHeight = 40;
   if (header !== null) {
     headerHeight = header.offsetHeight;
   }
