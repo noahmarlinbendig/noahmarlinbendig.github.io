@@ -1,9 +1,8 @@
 # noahmarlinbendig.github.io
 ### ToDo
-- 2048 nav Leiste styling anpassen
 - about-me schreiben
-- spiele Media querry für Controller Bild
-- 
+
+  
 ---
 
 ### Copypaste Vorlage
