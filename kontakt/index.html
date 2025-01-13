@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title></title>
+    <link rel="icon" href="/nmb.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <script src="/js/ini.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "GassPt_-mSFaENkYP",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <header>
+      <h2 class="centered">Kontakt</h2>
+      <img
+        src="/nmb.jpg"
+        alt="noahmarlinbendig-logo"
+        width="100"
+        height="100"
+      />
+    </header>
+    <nav id="nav-placeholder"></nav>
+    <noscript>
+      <div class="noscript-warning">
+        <p>
+          Diese Website erfordert JavaScript, um vollständig zu funktionieren.
+          Bitte aktiviere JavaScript in deinem Browser.
+        </p>
+      </div>
+      <nav>
+        <a href="/">Startseite</a>
+        <a href="/links">Links</a>
+      </nav>
+    </noscript>
+
+    <main>
+      <section id="Email">
+        <h2 class="centered">Kontaktformular</h2>
+        <p class="centered">
+          Nutze das Kontaktformular, um mir eine Nachricht zu schreiben.
+        </p>
+        <div>
+          <input
+            type="text"
+            id="author"
+            placeholder="Dein Name (Pflichtfeld)"
+          />
+          <input
+            type="email"
+            id="email"
+            placeholder="email@example.com (Pflichtfeld)"
+          />
+          <input type="text" id="subject" placeholder="Betreff" />
+        </div>
+        <textarea
+          type="text"
+          id="message"
+          placeholder="Deine Nachricht"
+          style="height: 400px; width: 100%"
+        ></textarea>
+        <br />
+        <input
+          type="checkbox"
+          id="dataProcessing"
+          name="dataProcessing"
+          required
+        />
+        <button onclick="sendEmail()" style="float: right">Senden</button>
+        <label for="dataProcessing"
+          >Ich stimme zu, dass diese Website meine Daten verarbeiten.</label
+        >
+        <script src="/js/MessageEmail.js" defer></script>
+      </section>
+
+      <section id="Discord">
+        <h2 class="centered">Nachricht</h2>
+        <p class="centered">Sende mir eine Nachricht über Discord.</p>
+        <div>
+          <input
+            type="text"
+            id="dcauthor"
+            placeholder="Dein Name (Pflichtfeld)"
+          />
+          <input type="text" id="dcmessage" placeholder="Deine Nachricht" />
+          <button onclick="sendMessage()" style="float: right">Senden</button>
+        </div>
+        
+        <input
+          type="checkbox"
+          id="dcdataProcessing"
+          name="dcdataProcessing"
+          required
+        />
+        <label for="dcdataProcessing"
+          >Ich stimme zu, dass Discord und diese Website meine Daten
+          verarbeiten.</label
+        >
+        <script src="/js/MessageDC.js" defer></script>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2024 - <span id="year"></span> Noah Marlin Bendig. Alle Rechte
+        vorbehalten.
+      </p>
+    </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+</html>

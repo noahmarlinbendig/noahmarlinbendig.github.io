@@ -16,7 +16,7 @@
     <meta name="description" content="" />
     <title></title>
     <link rel="icon" href="nmb.jpg" type="image/jpg" />
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="/stylesheet.css" />
     <script src="js/nav.js" defer></script>
   </head>
   <body>
