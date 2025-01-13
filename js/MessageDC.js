@@ -38,6 +38,9 @@ function sendMessage() {
     popup.className = "popup";
     if (request.status >= 200 && request.status < 300) {
       popup.innerHTML = `<p>Nachricht erfolgreich gesendet!</p><button onclick="this.parentElement.remove()">OK</button>`;
+      document.getElementById("dcmessage").value = "";
+      document.getElementById("dcauthor").value = "";
+      document.getElementById("dcdataProcessing").checked = false;
     } else {
       popup.innerHTML = `<p>Fehler beim Senden der Nachricht. Versuche es später erneut.</p><button onclick="this.parentElement.remove()">OK</button>`;
     }
